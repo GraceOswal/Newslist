@@ -2,12 +2,11 @@ from flask import render_template
 from app import app
 
 #Views
-@app.route('/news/<news_id>')
-def news(news_id):
+@app.route('/news/')
+def index():
 
     '''
-    View the news page function that returns the details of news page
-    and its data.
+    View root.page function that returns the index page and its data
     '''
 
     message = 'The News List'
