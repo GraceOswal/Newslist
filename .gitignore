@@ -3,3 +3,4 @@
 .ionide
 virtual/
 *.pyc
+.history
