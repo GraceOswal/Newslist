@@ -2,7 +2,7 @@ from flask import render_template
 from app import app
 
 #Views
-@app.route('/news/<int:news_id>')
+@app.route('/news/<intnews_id>')
 def news(news_id):
 
     '''
