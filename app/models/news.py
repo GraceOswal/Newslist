@@ -5,7 +5,7 @@ class News:
         self.source = source
         self.title = title
         self.description = description
-        self.urltoimage = 'https://github.com/GraceOswal/Newslist/blob/master/abc%20image%201/img1.jpeg'/+poster
+        self.urltoimage = 'https://github.com/GraceOswal/Newslist/blob/master/abc%20image%201/img1.jpeg'
         self.urltonews = urltonews
         self.category = category
         self.language = language
