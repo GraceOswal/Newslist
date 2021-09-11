@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+from .request import 
 
 #Views
 @app.route('/news/<int:news_id>')
