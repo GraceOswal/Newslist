@@ -10,7 +10,7 @@ class NewsRequest:
     def get_sources(self):
 
         sources = []
-        sources_url = 'https://newsapi.org/v2/top-headlines/sources?apiKey={}'.format(sources, self.API_KEY)
+        sources_url = 'https://newsapi.org/v2/sources?q={}&apiKey={}'.format(sources, self.API_KEY)
         response = requests.get(sources_url)
         if response.status_code == 200:
             sources.append(data)
@@ -19,18 +19,19 @@ class NewsRequest:
 
     def get_articles(self, article):
         article = []
-    article_url = 'https://newsapi.org/v2/everything?q={}&apiKey={}'.format(article, self.API_KEY)
+    article_url = 'https://newsapi.org/v2/everything?sources={}&apiKey={}'.format(id, self.API_KEY)
     response = requests.get(articles_url)
     if response.status_code == 200:
+        for data in response.json()['articles']
         articles.append(data)
     print(articles)
     return articles
 
     def get_article_by_source(self, id):
-        source = []
-    sources_url = 'https://newsapi.org/v2/top-headlines/sources?apiKey={}'.format(sources, self.API_KEY)
-    response = requests.get(sources_url)
+        source_articles = []
+    source_articles_url = 'https://newsapi.org/v2/everything?sources={}?apiKey={}'.format(sources, self.API_KEY)
+    response = requests.get(source_articles_url)
     if response.status_code == 200:
-        sources.append(data)
-    print(sources)
-    return sources
+        source_articles.append(data)
+    print(source_article)
+    return source_article
