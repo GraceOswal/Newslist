@@ -11,3 +11,5 @@ app.config.from_object(DevConfig)
 app.config.from_pyfile('instance/config.py')
 
 from app import views
+
+from app import error
