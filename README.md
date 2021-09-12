@@ -31,7 +31,10 @@ source in the application.
 
 ## License
 
+MIT License
+
+Copyright (c) 2021 Grace Oswal
+
 <https://github.com/GraceOswal/Newslist/blob/master/LICENSE>
 
-MIT copyright GraceOswal 2021.
 
