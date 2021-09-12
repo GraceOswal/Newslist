@@ -1,2 +1,57 @@
 font-family: 'Alumni Sans',
 sans-serif;
+.navbar {
+    background-color: #0925a1;
+}
+
+.articles {
+    background-color: #7e590b;
+    margin-top: 40px;
+}
+
+.sources {
+    background-color: #23740b;
+    margin-top: 40px;
+}
+
+.single_article {
+    background-color: #032535;
+    margin-top: 40px;
+}
+
+card,
+card-img-top {
+    border: none;
+}
+
+.hjumbo {
+    background-image: url('https://github.com/GraceOswal/Newslist/blob/acda55cc01ab124ba916c86469436a935d421eec/abc%20image%201/img1/fit.jpeg');
+}
+
+.txt {
+    font-family: 'Special Elite', cursive;
+    font-size: 50px;
+    color: rgb(228, 36, 196);
+}
+
+.htext {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.ch {
+    background-color: #dbd7cb;
+    border: none;
+}
+
+.category {
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #d04925;
+}
+
+.cat {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.navbar-toggler {
+    color: yellow;
+}
