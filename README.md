@@ -27,4 +27,5 @@ News List application created by Flask uses the News_API key to display the news
 
 <https://github.com/GraceOswal/Newslist/blob/master/LICENSE>
 
-MIT copyright GraceOswal 2021
+MIT copyright GraceOswal 2021.
+
