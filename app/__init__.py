@@ -1,15 +1,17 @@
 
 from flask import Flask
-from .config import Config
+from flask_bootstrap import Bootstrap
+from config import Config
 
 #Inializing application
-app = Flask(__name__, instance_relative_config = True)
+def create_app():
+    app = Flask(__name__)
 
-#This sets up configurations
-app.config.from_object(Config)
+#Blueprint configurations
+    app.config.from_object(Config)
 
-app.config.from_pyfile('instance/config.py')
+    from .main import main as main_blueprint
 
-from app import views
+    app.register_blueprint(main_blueprint)
 
-from app import error
+    return app
