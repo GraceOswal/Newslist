@@ -18,14 +18,14 @@ News List application created by Flask uses the News_API key to display the news
 > As a user, I would want to see the image, description and the time a news article was created.
 > As a user, I would want to click on an article and read the full article on the source website.
 
-
 ## Collaborations
 
 > For a collaboration email [grace.osswa@student.moringaschool.com]
 
 ## License
 
+MIT License
+
+Copyright (c) 2021 Grace Oswal
+
 <https://github.com/GraceOswal/Newslist/blob/master/LICENSE>
-
-MIT copyright GraceOswal 2021.
-
