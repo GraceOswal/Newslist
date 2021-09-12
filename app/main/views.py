@@ -1,8 +1,8 @@
 from flask import render_template
 from app import app, news_request
-from .request import NewsRequest
+
 from urllib import request
-from .request import get_article_by_source
+
 
 #Views
 @app.route('/')

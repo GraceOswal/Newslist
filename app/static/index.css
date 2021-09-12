@@ -1,5 +1,3 @@
-font-family: 'Alumni Sans',
-sans-serif;
 .navbar {
     background-color: #0925a1;
 }
@@ -29,7 +27,7 @@ card-img-top {
 }
 
 .txt {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Alumni Sans', sans-serif;
     font-size: 50px;
     color: rgb(228, 36, 196);
 }
