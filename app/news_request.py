@@ -1,4 +1,5 @@
-import urllib.request
+import urllib.request, json
+from .models import News
 
 from config import Config
 from app.main.views import source_article
