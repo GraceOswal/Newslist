@@ -1,10 +1,6 @@
-import urllib.request, json
-from .models import News
-
 from config import Config
 from app.main.views import source_article
 from urllib import request
-
 
 class NewsRequest:
     def __init__(self):
