@@ -1,8 +1,9 @@
 from config import Config
 import urllib.request,json
 from app.models import News, Articles
-
 from urllib import request
+
+
 
 api_key = None
 

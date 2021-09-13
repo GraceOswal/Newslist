@@ -1,6 +1,6 @@
 from flask import render_template, request
 
-from app.news_request import NewsRequest
+from ..import NewsRequest
 
 from . import main
 
