@@ -1,11 +1,19 @@
 from config import Config
+import urllib.request,json
+from app.models import News, Articles
 
 from urllib import request
 
-class NewsRequest:
-    def __init__(self):
+api_key = None
 
-        self.API_KEY = Config.API_KEY
+#news base url
+base_url=None
+
+def configure_request(app):
+    global api_key, base_url
+    api_key = app.config['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']
+    base_url = app.config ['NEWS_API_URL_ALL']
+
 
     def get_sources(self):
 
