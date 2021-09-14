@@ -16,20 +16,20 @@ def configure_request(app):
     base_url = app.config ['NEWS_API_URL_ALL']
 
 
-    def get_sources(self):
+def get_sources():
 
         sources = []
-        sources_url = 'https://newsapi.org/v2/sources?q={}&apiKey={}'.format(sources, self.API_KEY)
-        response = request.get(sources_url)
+        sources_url = 'https://newsapi.org/v2/sources?q={}&apiKey={}'.format(sources, api_key)
+        response = request.urlope(sources_url)
         if response.status_code == 200:
             for data in response.json()['sources']:
                 sources.append(data)
         print(sources)
         return sources
 
-    def get_articles(self, article):
+def get_articles(self, article):
         articles = []
-        articles_url = 'https://newsapi.org/v2/everything?q={}&apiKey={}'.format(articles, self.API_KEY)
+        articles_url = 'https://newsapi.org/v2/everything?q={}&apiKey={}'.format(articles, self.api_key)
         response = request.get(articles_url)
         if response.status_code == 200:
             for data in response.json()['articles']:
@@ -38,12 +38,12 @@ def configure_request(app):
 
             return articles
 
-    def get_article_by_source(self, id):
+def get_article_by_source(self, id):
         source_articles = []
         source_articles_url = 'https://newsapi.org/v2/everything?sources={}?apiKey={}'.format(id, self.API_KEY)
         response = request.get(source_articles_url)
         if response.status_code == 200:
             for data in response.json()['articles']:
-                source_article.append(data)
-            print(source_article)
-            return source_article
+                source_articles.append(data)
+            print(source_articles)
+            return source_articles
